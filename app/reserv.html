@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        finatel
+    </title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,100,500,900&amp;subset=latin,cyrillic-ext,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main>
+    <header>
+        <nav class="m-nav">
+            <a class="m-nav_item logo" href="/"></a>
+            <a class="m-nav_item" href="#">О компании</a>
+            <a class="m-nav_item" href="#">Как это работает</a>
+            <a class="m-nav_item" href="#">Вопрос-ответ</a>
+            <a class="m-nav_item" href="#">Обратная связь</a>
+            <a class="m-nav_item profile" href="#"><i class="icon_person"></i>Личный кабинет</a>
+            <a class="m-nav_item phone" href="tel:88002001298">8 800 200 12 98</a>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="content_inner reserve">
+            <div class="block_transp col_7">
+                <h1>
+                    Резервирование средств
+                    для привязки карты
+                </h1>
+
+                <p class="under_header">
+                    Укажите данные вашей банковской карты
+                </p>
+
+                <form action="#" class="credit_card__form">
+                    <label for="number">
+                        <span>Номер карты</span>
+                        <input type="text" id="number"/>
+                    </label>
+                    <label for="name">
+                        <span>Имя владельца карты</span>
+                        <input type="text" id="name"/>
+                    </label>
+                    <label for="month" class="card_date">
+                        <span>Срок действия</span>
+                        <input class="small" type="number" id="month" placeholder="ММ"/>
+                        <input class="small" type="number" id="year" placeholder="ГГ"/>
+                    </label>
+                    <label for="cvc" class="card_cvc">
+                        <span>CVC CODE</span>
+                        <input class="small" type="text" id="cvc"/>
+                    </label>
+                </form>
+                <a class="submit_btn btn_orange" href="#">Отмена</a>
+                <a class="submit_btn" href="#">Продолжить</a>
+
+                <p class="help_text">* Мы принимаем пластиковые карты Visa и MasterCard банков Российской Федерации</p>
+            </div>
+            <div class="block">
+                <p class="under_header">Мы заботимся о безопасности</p>
+                <div class="col_3">Безопасность платежей
+                    осуществляется с помощью
+                    БАНКА-ЭКВАЙЕРА,
+                    функционируещего
+                    на основе современных
+                    протоколов и технологий,
+                    разработанных международными
+                    платежными системами VISA
+                    International и MasterCard
+                    International (3D Secure, USAF)
+                </div>
+                <div class="col_3">Безопасность передаваемой
+                    информации обеспечивается
+                    с помощью современных
+                    протоколов безопасности
+                    в Интернет (SSL/TLS)
+                </div>
+                <div class="col_3">
+                    Передача полученных конфиденциальных данных Держателя карты (реквизиты карты, регистрационные данные и т.д.) осуществляются по закрытым сетям передачи данных, сертифицированным международными стандартами банковской безопасности PSI DSS 1 уровня.
+                </div>
+            </div>
+        </div>
+</main>
+
+<footer>
+    <div class="footer_inner">
+        <a class="f-logo" href="/"></a>
+        <nav class="f-nav">
+            <a class="f-nav_link" href="#">Оговорка на частность</a>
+            <a class="f-nav_link" href="#">Авторское право</a>
+            <a class="f-nav_link" href="#">Условие пользования сайтом</a>
+        </nav>
+        <div class="copy">
+            <a href="#">Дизайн и разработка сайта<span> — </span><i class="barneo_logo"></i></a>
+
+            <p>© Finatel 2014. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+<!--<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />-->
+<script>
+    $(function () {
+        $('.questions').accordion({
+            header: 'li:even'
+        });
+//        $('#date').datepicker();
+    })
+</script>
+</body>
+</html>

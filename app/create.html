@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        finatel
+    </title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,100,500,900&amp;subset=latin,cyrillic-ext,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main>
+    <header>
+        <nav class="m-nav">
+            <a class="m-nav_item logo" href="/"></a>
+            <a class="m-nav_item" href="#">О компании</a>
+            <a class="m-nav_item" href="#">Как это работает</a>
+            <a class="m-nav_item" href="#">Вопрос-ответ</a>
+            <a class="m-nav_item" href="#">Обратная связь</a>
+            <a class="m-nav_item profile" href="#"><i class="icon_person"></i>Личный кабинет</a>
+            <a class="m-nav_item phone" href="tel:88002001298">8 800 200 12 98</a>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="content_inner create_acc">
+            <h1>
+                Создайте аккаунт
+            </h1>
+
+            <form class="create_accf" action="#">
+                <label for="fname">
+                    Фамилия
+                </label>
+                <input id="fname" type="text"/>
+                <label for="name">
+                    Имя
+                </label>
+                <input id="name" type="text"/>
+                <label for="sname">
+                    Отчество
+                </label>
+                <input id="sname" type="text"/>
+                <label for="sname">
+                    <span>Телефон</span>
+                    <input id="telef" type="tel"  class="info_input"/>
+                    <span class="info">
+                        телефон вводится без 8, в формате 9XX-XXX-XXXX
+                    </span>
+
+                </label>
+                <label for="email" class="error_input">
+                    <span>E-mail</span>
+                    <input class="error_field" id="email" type="tel"/>
+                    <span class="error">
+                        поле заполнено не верно
+                    </span>
+
+                </label>
+
+                <label for="years" class="checkbox_wr">
+                    <input id="years" type="checkbox"/>
+                    <span></span>
+                    <span class="checkbox_text">Вам уже исполнилось 23 года?</span>
+                </label>
+                <label for="oferta" class="checkbox_wr2">
+                    <input id="oferta" type="checkbox"/>
+                    <span></span>
+                    <span class="checkbox_text">Я согласен с публичной офертой</span>
+                </label>
+                <a href="#" class="submit_btn">Регистрация</a>
+            </form>
+        </div>
+</main>
+
+<footer>
+    <div class="footer_inner">
+        <a class="f-logo" href="/"></a>
+        <nav class="f-nav">
+            <a class="f-nav_link" href="#">Оговорка на частность</a>
+            <a class="f-nav_link" href="#">Авторское право</a>
+            <a class="f-nav_link" href="#">Условие пользования сайтом</a>
+        </nav>
+        <div class="copy">
+            <a href="#">Дизайн и разработка сайта<span> — </span><i class="barneo_logo"></i></a>
+
+            <p>© Finatel 2014. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+<!--<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />-->
+<script>
+    $(function () {
+        $('.questions').accordion({
+            header: 'li:even'
+        });
+//        $('#date').datepicker();
+    })
+</script>
+</body>
+</html>

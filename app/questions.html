@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        finatel
+    </title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,100,500,900&amp;subset=latin,cyrillic-ext,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main>
+    <header>
+        <nav class="m-nav">
+            <a class="m-nav_item logo" href="/"></a>
+            <a class="m-nav_item" href="#">О компании</a>
+            <a class="m-nav_item" href="#">Как это работает</a>
+            <a class="m-nav_item" href="#">Вопрос-ответ</a>
+            <a class="m-nav_item" href="#">Обратная связь</a>
+            <a class="m-nav_item profile" href="#"><i class="icon_person"></i>Личный кабинет</a>
+            <a class="m-nav_item phone" href="tel:88002001298">8 800 200 12 98</a>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="content_inner">
+            <h1>
+                Вопрос-ответ
+            </h1>
+            <ul class="questions">
+                <li><a href="#">Кто может получить заём?</a></li>
+                <li>Заём может получить гражданин РФ в возрасте от 21 до 70 лет, имеющий постоянный источник дохода.
+                    Обращаем Ваше внимание, что данные критерии не являются исчерпывающими и администрация сервиса
+                    оставляет за собой право отказать в выдаче займа по результатам рассмотрения заявки.
+                </li>
+                <li><a href="#">Что нужно сделать, чтобы получить заём?</a></li>
+                <li></li>
+                <li><a href="#">Каким образом происходит перевод суммы займа?</a></li>
+                <li></li>
+                <li><a href="#">На какие банковские карты возможно получить заём?</a></li>
+                <li></li>
+                <li><a href="#">Как, когда и зачем подтверждать свою банковскую карту?</a></li>
+                <li></li>
+                <li><a href="#">Сколько я могу получить и на какой срок?</a></li>
+                <li></li>
+                <li><a href="#">Сколько времени рассматривается заявка?</a></li>
+                <li></li>
+                <li><a href="#">Не могу перейти по ссылке в PDF документе, что делать?</a></li>
+                <li></li>
+                <li><a href="#">В пришедшем на почту письме нет ссылки для продолжения
+                    заполнения заявки, почему?</a></li>
+                <li></li>
+                <li><a href="#">Мне на почту не пришло письмо с подтверждением, что делать?</a></li>
+                <li></li>
+
+            </ul>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer_inner">
+        <a class="f-logo" href="/"></a>
+        <nav class="f-nav">
+            <a class="f-nav_link" href="#">Оговорка на частность</a>
+            <a class="f-nav_link" href="#">Авторское право</a>
+            <a class="f-nav_link" href="#">Условие пользования сайтом</a>
+        </nav>
+        <div class="copy">
+            <a href="#">Дизайн и разработка сайта<span> — </span><i class="barneo_logo"></i></a>
+
+            <p>© Finatel 2014. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+<!--<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />-->
+<script>
+    $(function () {
+        $('.questions').accordion({
+            header: 'li:even'
+        });
+//        $('#date').datepicker();
+    })
+</script>
+</body>
+</html>
